@@ -37,6 +37,10 @@ describe('RPS#start') do
   game = RPS.new("paper", "rock")
   expect(game.first_player_win?()).to(eq(true))
   end
+  it("will return true if the main player input is paper and secondary player is paper")do
+  game = RPS.new("paper", "paper")
+  expect(game.first_player_win?()).to(eq("Tie"))
+  end
 end
 
 

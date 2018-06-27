@@ -15,17 +15,19 @@ class RPS
 
   def first_player_win?()
     if @player_one_input == "rock" && @player_two_input =="scissors"
-      return true
+      true
     elsif @player_one_input =="scissors" && @player_two_input =="rock"
-      return false
+      false
     elsif @player_one_input =="scissors" && @player_two_input =="paper"
-      return true
+      true
     elsif @player_one_input =="paper" && @player_two_input =="scissors"
-      return false
+      false
     elsif @player_one_input =="paper" && @player_two_input =="rock"
-      return true
+      true
     elsif @player_one_input =="rock" && @player_two_input =="paper"
-      return false
+      false
+    else
+      "Tie"
     end
   end
 end
