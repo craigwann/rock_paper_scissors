@@ -10,5 +10,5 @@ if game_type == 'p'
   player_two_input = gets().chomp().downcase()
   puts `clear`
   new_game = RPS.new(player_one_input, player_two_input)
-  puts(new_game.first_player_win?())
+  puts("Did player 1 win?",  new_game.first_player_win?())
 end
